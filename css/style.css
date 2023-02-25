@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER SECTION */
+
+#logoLesPetitsPlats {
+  width: 37%;
+}
+
+/* POLICE */
+
+h5,
+p,
+.btn,
+li {
+  font-family: 'Lato', sans-serif;
+}
+
+/* SEARCH SECTION */
+
+.input-group {
+  height: 69px;
+}
+
+.input-group input,
+.input-group button {
+  background: #e7e7e7;
+  border: none;
+}
+
+.input-group button i {
+  font-size: 23px;
+}
+
+#searchRecipesInput:focus {
+  background: #e7e7e7;
+  box-shadow: none;
+}
+
+/* TAGS SECTION */
+
+.tags {
+  gap: 1%;
+}
+
+.tags button {
+  min-width: 90px;
+}
+
+.btn-success {
+  background-color: #68d9a4;
+  border: #68d9a4;
+}
+
+.btn-primary {
+  background-color: #3282f7;
+  border: #3282f7;
+}
+
+.btn-danger {
+  background-color: #ed6454;
+  border: #ed6454;
+}
+
+.texteTag {
+  margin-right: 10px;
+}
+
+/* TAGLISTS SECTION */
+
+input {
+  color: white;
+}
+
+#searchIngredient::placeholder,
+#searchAppareil::placeholder,
+#searchUstensiles::placeholder {
+  color: rgba(255, 255, 255, 0.432);
+}
+
+#searchIngredient,
+#searchAppareil,
+#searchUstensiles {
+  color: white;
+}
+
+.btn {
+  position: relative;
+}
+
+#btnIngredients,
+#btnAppareils,
+#btnUstensiles {
+  width: 170px;
+  height: 69px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btnTaglist {
+  display: none;
+  position: absolute;
+  z-index: 10;
+}
+
+.taglist {
+  width: auto;
+  max-width: 560px;
+}
+
+.taglist ul {
+  font-size: 14px;
+}
+
+.taglist li {
+  padding-bottom: 1.2rem !important;
+  text-align: left;
+}
+
+/* RECIPES SECTION */
+
+.article {
+  width: 405px;
+  height: 398px;
+  margin-right: 19px;
+  margin-bottom: 19px;
+}
+
+.article img {
+  height: 171px;
+  border-radius: 6px 6px 0px 0px;
+  margin-bottom: 6%;
+}
+
+.article h5 {
+  font-size: 1.15rem;
+}
+
+.card {
+  background: #e7e7e7;
+  border: none;
+}
+
+.card_description {
+  max-height: 135px;
+}
+
+.card_ingredients {
+  font-size: 13px;
+}
+
+.card-bodyText {
+  font-size: 12px;
+}
+
+.time p {
+  margin-left: 6px;
+}
+
+.recette {
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}

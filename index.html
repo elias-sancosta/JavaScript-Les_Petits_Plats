@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Font Family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap File -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <!-- Style File -->
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Les Petits Plats</title>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header class="head container text-center my-3">
+    <img id="logoLesPetitsPlats" src="./images/logoChef.png" alt="Logo Les Petits Plats">
+  </header>
+  <!-- End Header Section -->
+
+  <!-- Main Section -->
+  <main class="container">
+
+    <!-- Search Container -->
+    <div class="searchContainer">
+      <div class="col-auto">
+        <label class="visually-hidden" for="searchRecipesInput">Rechercher une recette</label>
+        <div class="input-group">
+          <input type="text" class="form-control" id="searchRecipesInput" placeholder="Rechercher une recette">
+          <button class="input-group-text" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+      </div>
+    </div>
+    <!-- End Search Container -->
+
+    <!-- Tags Area -->
+    <div class="tags d-flex mt-3"></div>
+    <!-- End Tags Area -->
+
+    <!-- Tags Lists -->
+    <div class="tag container row mt-3">
+      <div class="tag_ingredients col-2">
+        <div class="btn btn-primary" id="btnIngredients">Ingredients<i class="fa-solid fa-chevron-down"></i></div>
+        <div class="btnTaglist btn btn-primary" id="taglistIngredients">
+          <header class="header_tag m-3 d-flex align-items-center">
+            <input type="text" class="form-control bg-transparent border-0" id="searchIngredient"
+              placeholder="Rechercher un ingrédient">
+            <div id="iconTagIngredient"><i class="fa-solid fa-chevron-up"></i></div>
+          </header>
+          <section class="taglist" id="listIngredient">
+            <!-- Injected by JS -->
+          </section>
+        </div>
+      </div>
+      <div class="tag_appareil col-2">
+        <div class="btn btn-success" id="btnAppareils">Appareils<i class="fa-solid fa-chevron-down"></i></div>
+        <div class="btnTaglist btn btn-success" id="taglistAppareils">
+          <header class="header_tag m-3 d-flex align-items-center">
+            <input type="text" class="form-control bg-transparent border-0" id="searchAppareil"
+              placeholder="Rechercher un appareil">
+            <div id="iconTagAppareils"><i class="fa-solid fa-chevron-up"></i></div>
+          </header>
+          <section class="taglist" id="listAppareils">
+            <!-- Injected by JS -->
+          </section>
+        </div>
+      </div>
+      <div class="tag_ustensiles col-2">
+        <div class="btn btn-danger" id="btnUstensiles">Ustensiles<i class="fa-solid fa-chevron-down"></i></div>
+        <div class="btnTaglist btn btn-danger" id="taglistUstensiles">
+          <header class="header_tag m-3 d-flex align-items-center">
+            <input type="text" class="form-control bg-transparent border-0" id="searchUstensiles"
+              placeholder="Rechercher un ustensile">
+            <div id="iconTagUstensiles"><i class="fa-solid fa-chevron-up"></i></div>
+          </header>
+          <section class="taglist" id="listUstensiles">
+            <!-- Injected by JS -->
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- End Tags Lists -->
+
+    <!-- Recipe content -->
+    <div id="contentRecipes" class="cards container row row-cols-1 row-cols-md-3 g-4 mt-3">
+      <!-- Injected by JS -->
+    </div>
+    <!-- End Recipe content -->
+  </main>
+
+  <!-- JavaScript File -->
+  <script src="./js/script.js" type="module"></script>
+</body>
+
+</html>
